@@ -1,0 +1,97 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    background-color: rgb( 15 37 50);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.25;
+}
+
+.valuedesc {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.code {
+    background-color: rgb(53, 52, 62);
+    border: 2px rgb(53, 52, 62) solid;
+    border-radius: 4px;
+
+}
+
+
+.container {
+    width: 70%;
+    height: 250px;
+    display: block;
+    position: relative;
+    text-align: center;
+    overflow: auto;
+    margin: auto;
+}
+
+#absolutecontainer {
+    border: 1px rgba(245, 245, 245, 0.491) solid;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.box {
+    border: 4px whitesmoke solid;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    margin: 50px 10px;
+}
+
+.boxmain {
+    background-color: whitesmoke;
+    border: 4px whitesmoke solid;
+    color:black;
+    opacity: 0.75;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    margin: 50px 10px;
+}
+
+#static {
+    position: static;
+}
+
+#relative {
+    position: relative;
+    top: 40px;
+    right: 40px;
+}
+
+#absolute {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 0;
+    z-index: 1;
+    line-height: 120px;
+}
+
+#sticky {
+    position: sticky;
+    top: 50px;
+}
+
+.blankspace {
+    height: 900px;
+}

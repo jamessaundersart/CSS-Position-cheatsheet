@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cheatsheet: Position Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CSS Property Cheatsheet: Position</h1>
+        <h3>Here is a quick guide to the Position Property and its most common values.</h3>
+        <p class="valuedesc">The position property is a CSS property that allows us to change where an object (or element) appears on the webpage. Listed below are the most common values used to determine where an element can be placed.</p>
+    </header>
+    <main>
+        <h2>Static</h2>
+            <p class="valuedesc">The element behaves normally, this is the default value. Note: the top, left, bottom, right and z-index properties have no effect.</p>
+            <p class="valuedesc">In this example the box stays in its default position.</p>
+            <div class="container">
+                <div class="box"></div><div class="boxmain" id="static"></div><div class="box"></div>
+            </div>
+        <h2>Relative</h2>
+            <p class="valuedesc">The element behaves normally however it is then offset by the value of any subsequent top, left, bottom, and right properties. This might mean that it will overlap other elements, the stacking order can be set by the value of the z-index. </p>
+            <p class="valuedesc">In this example the box is offset by a value of <span class="code">top: 40px</span> and <span class="code"> left: 40px.</span> from its default position.</p>
+            <div class="container">
+                <div class="box"></div><div class="boxmain" id="relative"></div><div class="box"></div>
+            </div>
+        <h2>Absolute</h2> 
+            <p class="valuedesc">The element is taken out of the document flow and then takes a new position relative to the closest parent container that also has a defined <span class="code">position:</span> other than static. Its final position is then determined by the values of top, left, bottom, and right. </p>
+            <p class="valuedesc"> In this example the box is taken out of the document flow (meaning the other boxes move together to fill the void) and then takes its position relative to the closest <b>positioned</b> ancestor, in this case the surrounding box which has the property <span class="code">position: relative</span>. Here the values are <span class="code">top: 40px</span> and <span class="code">left: 400px</span> adjust the browser window and watch as the box stays 400px from the left as the surrounding box's width changes.</p>
+            <div class="container" id="absolutecontainer">
+                <div class="box"></div><div class="boxmain" id="absolute"></div><div class="box"></div>
+            </div>
+        <h2>Fixed</h2>
+            <p class="valuedesc">The element is taken out of the document flow and placed in a fixed position on the viewport. This means it stays put as the webpage is scrolled.</p>
+            <p class="valuedesc">In this example, again the box is taken out of the document flow causing the remaining boxes to close up the gap. The box is then fixed to the viewport in this case with the values <span class="code">bottom: 0px</span> and <span class="code">right: 0px</span> causing the box to be fixed in the bottom right hand corner of the viewport. </p>
+            <div class="container">
+                <div class="box"></div><div class="boxmain" id="fixed">Fixed Box</div><div class="box"></div>
+            </div>
+        <h2>Sticky</h2>
+            <p class="valuedesc">The element behaves normally until the box reaches the position described by the top, bottom, left or right properties. When this happens the box 'sticks' to that point in much the same way that a 'fixed' element would.</p>
+            <p class="valuedesc">In this example the value described is <span class="code">top: 50px</span>. This means that when the box is 50px from the top of its container, in this case the viewport, it sticks to that position.</p>
+            <div class="box"></div><div class="boxmain" id="sticky"></div><div class="box"></div>
+            <p class="valuedesc">Keep scrolling to see 'sticky' in effect.</p>
+        <div class="blankspace"></div>
+
+    </main>
+</body>
+</html>
